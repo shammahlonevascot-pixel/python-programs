@@ -21,4 +21,4 @@ elif year % 4 == 0:
 else:
     result = "Not a Leap Year"
 
-print(f"Year {year} is {result}")
+print("Year" + str(year) + " is " str(result)")
