@@ -41,7 +41,7 @@ match item_number:
 total_bill = 0
 
 # Using conditionals and rlational statements
-if food != "": # Checks if the the input is 
+if food != "": # Checks if the the input is valid
     quantity = int(input("Enter quantity for " + food + ": ")
     if quantity <= 0:
         print("Invalid Quantity.")
