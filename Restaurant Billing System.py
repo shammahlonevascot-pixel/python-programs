@@ -41,18 +41,18 @@ match item_number:
 total_bill = 0
 
 # Using conditionals and rlational statements
-if food != "":
-    quantity = int(input(f"Enter quantity for {food}: "))
+if food != "": # Checks if the the input is 
+    quantity = int(input("Enter quantity for " + food + ": ")
     if quantity <= 0:
         print("Invalid Quantity.")
     else:
         total_bill = price * quantity
         print("\n----- ORDER SUMMARY -----")
-        print(f"Item: {food}")
-        print(f"Quantity: {quantity}")
-        print(f"Total Bill: Php{total_bill}")
+        print("Item: " + str(food))
+        print("Quantity: " + str(quantity))
+        print("Total Bill: " + "Php" + str(total_bill))
 
-if total_bill == 0:
+if total_bill == 0: #If only total bill is 0
     print("Total Bill: ₱0")
 
 print("Thank you for ordering!")
